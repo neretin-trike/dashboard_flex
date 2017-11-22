@@ -108,8 +108,23 @@ header .user section p{
 
 .static-bar{
     flex-basis: 9.6%;
+    display: flex;
 }
 
+.static-bar .static-index{
+    align-self: center;
+    flex-grow: 1;
+}
+
+.static-bar .static-index h3,
+.static-bar .static-index p{
+    padding: 0;
+    margin: 0;
+}
+
+/*--------------------------
+    MAIN FILLING
+---------------------------*/
 
 .main-filling{
     display: flex;
