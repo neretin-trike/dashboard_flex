@@ -6,6 +6,16 @@ body{
     font-family: 'Lato';
     background-color: white;
     color: #13112b;
+    font-size: 1.4rem;
+
+    min-height: 100vh;
+
+    display: flex;
+    
+}
+
+*{
+    border: 0.1rem solid black;
 }
 
 .overlay{
@@ -26,6 +36,38 @@ body{
     position: absolute;
     height: inherit;
 }
+
+.left-sidebar{
+    flex-basis: 5.164%;
+}
+
+.container{
+    flex-basis: 94.836%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    flex-basis: 6.9%;
+}
+
+.static-bar{
+    flex-basis: 9.6%;
+}
+
+.main-filling{
+    display: flex;
+    flex-basis: 83.5%;
+}
+
+main{
+    flex-basis: 79.183%;
+}
+
+.right-sidebar{
+    flex-basis: 20.817%;
+}
+
 
 /*--------------------------
     HEADER
