@@ -180,4 +180,51 @@ main .today-task .task{
 
 .right-sidebar{
     flex-basis: 20.817%;
+    display: flex;
+    flex-direction: column;
 }
+
+.right-sidebar nav{
+    display: flex;
+}    
+
+.right-sidebar nav button{
+    flex-grow: 1;
+    align-self: center;
+}
+
+.right-sidebar .users-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}    
+
+.right-sidebar .user{
+    display: flex;
+}    
+
+.right-sidebar .user figure,
+.right-sidebar .user section,
+.right-sidebar .user button{
+    flex-grow: 1;
+    align-self: center;
+}
+
+.right-sidebar .user h3,    
+.right-sidebar .user p{
+    margin: 0;
+}
+
+.right-sidebar .sponsors div{
+    background-color: orange;
+}    
+
+.right-sidebar .sponsors article{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}    
+    
+.right-sidebar .sponsors article div{
+    flex-basis: 32.79%;
+}    
