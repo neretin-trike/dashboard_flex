@@ -37,6 +37,11 @@ body{
     height: inherit;
 }
 
+figure{
+    padding: 0;
+    margin: 0;
+}
+
 /*--------------------------
     LEFT SIDE BAR
 ---------------------------*/
@@ -95,7 +100,6 @@ header .user figure > img{
     height: 100%;
 }    
 
-header .user figure,
 header .user section h2,
 header .user section p{
     padding: 0;
@@ -131,19 +135,49 @@ header .user section p{
     flex-basis: 83.5%;
 }
 
+/*--------------------------
+    MAIN 
+---------------------------*/
+
 main{
     flex-basis: 79.183%;
 }
 
+main .row,
+main header{    
+    display: flex;
+}
+
+main .monthly-revenue header h3{
+    margin-right: auto;
+}  
+
+main .monthly-revenue header nav{
+    align-self: center;
+}    
+
+main .row .hour-revenue,    
+main .row .monthly-revenue{
+    flex-grow: 1;
+}    
+
+main .customers-feed .comments{
+    display: flex;
+}
+
+main .customers-feed .comments img{
+    /* height:  */
+}    
+
+main .today-task .task{
+    display: flex;
+}
+    
+
+/*--------------------------
+    RIGHT SIDEBAR
+---------------------------*/
+
 .right-sidebar{
     flex-basis: 20.817%;
 }
-
-
-/*--------------------------
-    HEADER
----------------------------*/
-
-/*--------------------------
-    FOOTER
----------------------------*/
