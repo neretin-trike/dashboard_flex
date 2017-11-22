@@ -38,8 +38,26 @@ body{
 }
 
 .left-sidebar{
+    text-align: center;
+    background-color: orange;
     flex-basis: 5.164%;
+    display: flex;
+    flex-direction: column;
 }
+
+.left-sidebar nav{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+.left-sidebar nav img{
+    margin: 0 auto;
+    display: block;
+}    
+
+.left-sidebar button{
+}    
 
 .container{
     flex-basis: 94.836%;
