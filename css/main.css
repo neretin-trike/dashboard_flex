@@ -212,6 +212,7 @@ header .user .more{
 .static-bar .static-index{
     align-self: center;
     flex-grow: 1;
+    margin: auto 4.25rem;
 }
 
 .static-bar .static-index h3,
@@ -220,11 +221,55 @@ header .user .more{
     margin: 0;
 }
 
+.static-bar .static-index h3{
+    font-size: 1.2rem;
+    color: #777777;
+}
+
+.static-bar .static-index p{
+    font-size: 2.0rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #fd4e75, #fc7858);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.35rem 0;
+}
+
+.static-bar .static-index span{
+    font-size: 1.2rem;
+    color: #bfbfbf;    
+    font-weight: 700;
+    position: relative;
+}    
+
+.static-bar .static-index span.came:before{
+    content: "▴";
+    color: #a889e9;
+}
+
+.static-bar .static-index span.gone:before{
+    content: "▾";
+    color: #fd5670;
+}
+
+.static-bar .static-index:last-child{
+    margin: auto 2.5rem;
+}
+
+.static-bar .static-index .add{
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #fd4e75, #fc7858);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}    
+
 /*--------------------------
     MAIN FILLING
 ---------------------------*/
 
 .main-filling{
+    background-color: #ebebeb;
     display: flex;
     flex-basis: 83.5%;
 }
