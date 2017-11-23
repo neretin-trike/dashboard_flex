@@ -280,6 +280,8 @@ header .user .more{
 
 main{
     flex-basis: 79.183%;
+    padding: 1rem;
+    padding-bottom: 6rem;
 }
 
 main h3{
@@ -292,6 +294,7 @@ main .row,
 main header{    
     display: flex;
     border: none;
+    flex-grow: 1;
 }
 
 main .monthly-revenue,
@@ -325,6 +328,7 @@ main .monthly-revenue header nav button{
     font-size: 1.4rem;
     font-weight: 700;
     color: #bfbfbf;
+    border: none;
 }    
 
 main .monthly-revenue header nav button.selected{
@@ -338,7 +342,6 @@ main .monthly-revenue .more{
     background-image: url(../images/more.png);
     background-position: center;
     background-repeat: no-repeat;
-    border: none;
 }
 
 main .hour-revenue{
@@ -441,10 +444,138 @@ main .customers-feed .comments blockquote p{
     margin-left: 1.5rem;
 }    
 
-main .today-task .task{
+main .task-and-static{
     display: flex;
+    flex-direction: column;
 }
+
+main .today-task h3{
+    margin-bottom: 2.0rem;
+}    
+
+main .today-task .task{
+    width: 50.0rem;
     
+    display: flex;
+    padding: 1.0rem 0;
+    border-top: 0.1rem solid #f1f1f1;
+}
+
+main .today-task .task:last-child{
+    border-bottom: 0.1rem solid #f1f1f1;
+}
+
+main .today-task .task div{
+    flex-grow: 1;
+    width: 15%;
+    color: #fd566f;
+    font-weight: 900;
+}    
+
+main .today-task .task input{
+    display: none;
+}    
+
+main .today-task .task label:before{
+    content: "";
+    display: inline-block;
+    background-color: red;
+    border-radius: 2.5rem;
+
+    position: relative;
+    top: 0.25rem;
+    
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.2rem solid #f1f1f1;
+    background-color: transparent;
+    background-image: none;
+    margin-right: 1.0rem;
+}
+
+main .today-task .task input:checked + label:before{
+    width: 1.6rem;
+    height: 1.6rem;
+    background-image: url(../images/main_content/check.png), linear-gradient(to left, #f17056 1%,#fd5272 100%);
+    background-position: center;
+    background-repeat: no-repeat; 
+    border: none;
+}    
+
+main .today-task .task p{
+    margin: 0 3rem;
+    width: 50%;
+    color: #bfbfbf;
+    box-sizing: border-box;
+}
+
+main .today-task .task time{
+    padding-left: 2.5rem;
+    width: 15%;
+
+    color: #9c9c9c;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    background-image: url(../images/main_content/wall_clock.png);
+    background-position: 0 0.1rem;
+    background-repeat: no-repeat;
+}    
+    
+main .progress,
+main .shipments{
+    text-align: center;
+    flex-grow: 1;
+}    
+
+main .progress h3,
+main .shipments h3{
+    margin-bottom: 3.0rem;
+}
+
+main .progress span,
+main .shipments span{
+    font-size: 1.2rem;
+    color: #bfbfbf;    
+    font-weight: 700;
+    position: relative;
+}    
+
+main .progress span.came:before,
+main .shipments span.came:before{
+    content: "▴";
+    color: #a889e9;
+}
+
+main .progress span.gone:before,
+main .shipments span.gone:before{
+    content: "▾";
+    color: #fd5670;
+}
+
+main .progress p{
+    /* margin: 1.1rem */
+    font-size: 2.2rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #6359b0, #b26ae1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main .shipments p{
+    margin-right: auto;
+    font-size: 2.2rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #fd4e75, #fc7858);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}    
+
+main .shipments figcaption{
+    margin-top: 2.0rem;    
+    display: flex;
+    align-items: center;
+}    
 
 /*--------------------------
     RIGHT SIDEBAR
@@ -460,7 +591,7 @@ main .today-task .task{
 .right-sidebar nav{
     background-image: linear-gradient(to left, #f17056 1%,#fd5272 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     display: flex;
-    padding: 1.4rem 0;
+    /* padding: 1.4rem 0; */
 }    
 
 .right-sidebar nav .selected{
