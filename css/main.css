@@ -327,6 +327,7 @@ main .today-task .task{
 .right-sidebar nav{
     background-image: linear-gradient(to left, #f17056 1%,#fd5272 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     display: flex;
+    padding: 1.4rem 0;
 }    
 
 .right-sidebar nav .selected{
@@ -419,7 +420,7 @@ main .today-task .task{
 }
 
 .right-sidebar .search-container input{
-    width: 70%;
+    width: 60%;
     border: 0;
     border-bottom: 0.1rem solid #f1f1f1;
     background-color:transparent;    
@@ -428,7 +429,9 @@ main .today-task .task{
 }
     
 .right-sidebar .search-container input::placeholder{
+    font-weight: 300;
     color: #c8c8c8;
+    font-size: 1.2rem;
 }    
 
 
@@ -468,7 +471,7 @@ main .today-task .task{
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
-    padding: 1.8rem 7.5rem;
+    padding: 1.8rem 16%;
 }    
     
 .right-sidebar .sponsors article div{
