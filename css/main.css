@@ -282,10 +282,34 @@ main{
     flex-basis: 79.183%;
 }
 
+main h3{
+    font-size: 1.6rem;
+    color: #777777;
+    margin: 0;
+}
+
 main .row,
 main header{    
     display: flex;
+    border: none;
 }
+
+main .monthly-revenue,
+main .hour-revenue,
+main .customers-feed,
+main .today-task,
+main .progress,
+main .shipments{
+    background-color: white;
+    margin: 1.0rem;
+    box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.13); 
+    padding: 3.0rem;
+}
+
+main .hour-revenue,    
+main .monthly-revenue{
+    flex-grow: 1;
+}   
 
 main .monthly-revenue header h3{
     margin-right: auto;
@@ -293,19 +317,128 @@ main .monthly-revenue header h3{
 
 main .monthly-revenue header nav{
     align-self: center;
+    display: flex;
+    margin-bottom: 2.0rem;
 }    
 
-main .row .hour-revenue,    
-main .row .monthly-revenue{
-    flex-grow: 1;
+main .monthly-revenue header nav button{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #bfbfbf;
 }    
+
+main .monthly-revenue header nav button.selected{
+    background-image: linear-gradient(to left, #f17056 1%,#fd5272 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: white;
+    padding: 0.6rem 1.6rem;
+    border-radius: 2.5rem;
+}
+
+main .monthly-revenue .more{
+    background-image: url(../images/more.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+main .hour-revenue{
+    text-align: center;
+    position: relative;
+}    
+
+main .hour-revenue img{
+    margin: 3.0rem 0;
+}    
+
+main .hour-revenue .cash{
+    position: absolute;
+    margin: auto;
+    display: block;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    height: 3rem;
+
+    font-weight: 700;
+    font-size: 2.6rem;
+    background-image: linear-gradient(to right, #6359b0, #b26ae1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}    
+
+main .hour-revenue span{
+    font-size: 1.2rem;
+    color: #bfbfbf;    
+    font-weight: 700;
+    position: relative;
+}    
+
+main .hour-revenue span.came:before{
+    content: "▴";
+    color: #a889e9;
+}
+
+main .hour-revenue span.gone:before{
+    content: "▾";
+    color: #fd5670;
+}
 
 main .customers-feed .comments{
     display: flex;
+    margin-top: 2.0rem;
+}
+main .customers-feed .comments p strong{
+    font-weight: 900;
+    color: #777777;
+}
+    
+main .customers-feed .comments p{
+    padding: 1.5rem;
+    border: 0.1rem solid #f1f1f1;
+    color: #bfbfbf;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 2.0rem;
+}    
+
+main .customers-feed .comments figure{
+    margin-right: 2.0rem;
+    width: 17%;
 }
 
-main .customers-feed .comments img{
-    /* height:  */
+main .customers-feed .comments figcaption{
+    font-size: 1.0rem;
+    color: #979796;
+    text-align: center;
+    margin: 1.0rem 0;
+}    
+
+main .customers-feed .comments .avatar{
+    height: 4.2rem;
+    width: 4.2rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+main .customers-feed .comments .sophie img{
+    margin-left: -2.0rem;
+}    
+main .customers-feed .comments .quill img{
+    margin-left: -0.5rem;
+}    
+
+main .customers-feed .content blockquote{
+    margin: 0;
+    margin-left: 1.0rem;
+    border-left: 0.3rem solid #f1f1f1;
+}
+
+main .customers-feed .content blockquote:not(.last){
+    padding-bottom: 2.0rem;
+}    
+
+main .customers-feed .comments blockquote p{
+    margin: 0;
+    margin-left: 1.5rem;
 }    
 
 main .today-task .task{
